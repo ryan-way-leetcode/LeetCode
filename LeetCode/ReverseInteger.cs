@@ -12,21 +12,18 @@ namespace ReverseInteger
             //long to list
             bool negative = x < 0;
             input = Math.Abs(input);
-            long divide = 1;
-            List<long> list = new List<long>();
-            while(divide <= input)
-            {
-                divide *= 10;
-                list.Add((input % divide)/(divide/10));
-            }
-            
+            long input_digit = 1;
+            while(input_digit <= input)
+                input_digit *= 10;
+
             //list to reversed long
             long y = 0;
-            divide = 1;
-            for (int i = list.Count - 1; i >= 0; i--)
+            int output_digit = 1;
+            while (input_digit > 1)
             {
-                y += list[i] * divide;
-                divide *= 10;
+                y += (input%input_digit)/(input_digit/10) * output_digit;
+                output_digit *= 10;
+                input_digit /= 10;
             }
 
             //overflow handling
