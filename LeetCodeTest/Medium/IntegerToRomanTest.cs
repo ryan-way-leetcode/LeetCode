@@ -43,5 +43,11 @@ namespace LeetCodeTest
         {
             Assert.AreEqual(Solution.IntToRoman(1994), "MCMXCIV");
         }
+
+        [TestMethod]
+        public void Failed1()
+        {
+            Assert.AreEqual(Solution.IntToRoman(10), "X");
+        }
     }
 }
