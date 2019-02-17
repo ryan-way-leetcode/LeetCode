@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MedianOfTwoSortedArrays;
 
-namespace LeetCodeTest
+namespace LeetCodeTest.Hard
 {
     [TestClass]
     public class MedianOfTwoSortedArraysTest

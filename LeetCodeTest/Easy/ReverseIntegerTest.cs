@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ReverseInteger;
 
-namespace LeetCodeTest
+namespace LeetCodeTest.Easy
 {
     [TestClass]
     public class ReverseIntegerTest

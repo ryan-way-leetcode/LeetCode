@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StringToInteger;
+using RegularExpressionMatching;
 
-namespace LeetCodeTest.Medium
+namespace LeetCodeTest.Hard
 {
     [TestClass]
-    public class StringToIntegerTest
+    public class RegularExpressionMatchingTest
     {
         public Solution Solution;
 
@@ -17,43 +17,49 @@ namespace LeetCodeTest.Medium
         [TestMethod]
         public void Example1()
         {
-            Assert.AreEqual(Solution.MyAtoi("42"), 42);
+            Assert.AreEqual(false, Solution.IsMatch("aa", "a"));
         }
 
         [TestMethod]
         public void Example2()
         {
-            Assert.AreEqual(Solution.MyAtoi("   -42"), -42);
+            Assert.AreEqual(true, Solution.IsMatch("aa", "a*"));
         }
 
         [TestMethod]
         public void Example3()
         {
-            Assert.AreEqual(Solution.MyAtoi("4193 with words"), 4193);
+            Assert.AreEqual(true, Solution.IsMatch("ab", ".*"));
         }
 
         [TestMethod]
         public void Example4()
         {
-            Assert.AreEqual(Solution.MyAtoi("words and 987"), 0);
+            Assert.AreEqual(true, Solution.IsMatch("aab", "c*a*b"));
         }
 
         [TestMethod]
         public void Example5()
         {
-            Assert.AreEqual(Solution.MyAtoi("-91283472332"), int.MinValue);
+            Assert.AreEqual(false, Solution.IsMatch("mississippi", "mis*is*p*."));
         }
 
         [TestMethod]
         public void Failed1()
         {
-            Assert.AreEqual(Solution.MyAtoi("+-2"), 0);
+            Assert.AreEqual(true, Solution.IsMatch("aaa", "a*a"));
         }
 
         [TestMethod]
         public void Failed2()
         {
-            Assert.AreEqual(Solution.MyAtoi("2147483648"), 2147483647);
+            Assert.AreEqual(true, Solution.IsMatch("a", "ab*"));
+        }
+
+        [TestMethod]
+        public void Failed3()
+        {
+            Assert.AreEqual(true, Solution.IsMatch("", "c*c*"));
         }
     }
 }

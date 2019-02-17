@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RomanToInteger;
 
-namespace LeetCodeTest
+namespace LeetCodeTest.Easy
 {
     [TestClass]
     public class RomanToIntegerTest
