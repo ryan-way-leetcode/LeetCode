@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StringToInteger
+namespace LeetCode.Medium.StringToInteger
 {
     public class Solution
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ReverseInteger
+namespace LeetCode.Easy.ReverseInteger
 {
     public class Solution
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RegularExpressionMatching
+namespace LeetCode.Hard.RegularExpressionMatching
 {
     public class Solution
     {

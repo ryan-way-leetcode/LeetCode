@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PalindromeNumber;
+using LeetCode.Easy.PalindromeNumber;
 
 namespace LeetCodeTest.Easy
 {

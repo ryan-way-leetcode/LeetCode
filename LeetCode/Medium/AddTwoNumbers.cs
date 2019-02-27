@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AddTwoNumbers
+namespace LeetCode.Medium.AddTwoNumbers
 {
    
     ///Definition for singly-linked list.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PalindromeNumber
+namespace LeetCode.Easy.PalindromeNumber
 {
     public class Solution
     {

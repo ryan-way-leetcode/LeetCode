@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StringToInteger;
+using LeetCode.Medium.StringToInteger;
 
 namespace LeetCodeTest.Medium
 {

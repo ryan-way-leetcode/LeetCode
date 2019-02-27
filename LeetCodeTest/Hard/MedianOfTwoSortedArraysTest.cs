@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MedianOfTwoSortedArrays;
+using LeetCode.Hard.MedianOfTwoSortedArrays;
 
 namespace LeetCodeTest.Hard
 {

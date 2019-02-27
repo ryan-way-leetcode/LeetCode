@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MedianOfTwoSortedArrays
+namespace LeetCode.Hard.MedianOfTwoSortedArrays
 {
     public class Solution
     {

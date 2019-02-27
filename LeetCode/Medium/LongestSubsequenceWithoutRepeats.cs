@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LongestSubsequenceWithoutRepeats
+namespace LeetCode.Medium.LongestSubsequenceWithoutRepeats
 {
     public class Solution
     {

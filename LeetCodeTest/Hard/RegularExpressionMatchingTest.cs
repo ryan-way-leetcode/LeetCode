@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RegularExpressionMatching;
+using LeetCode.Hard.RegularExpressionMatching;
 
 namespace LeetCodeTest.Hard
 {

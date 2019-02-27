@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TwoSum
+namespace LeetCode.Easy.TwoSum
 {
     public class Solution
     {

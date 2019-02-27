@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RomanToInteger
+namespace LeetCode.Easy.RomanToInteger
 {
     public class Solution
     {

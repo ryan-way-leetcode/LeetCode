@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using LeetCode.Easy.ReverseInteger;
+using LeetCode.Easy.ValidParentheses;
 
 namespace LeetCodeTest.Easy
 {
     [TestClass]
-    public class ReverseIntegerTest
+    public class ValidParenthesesTest
     {
         public Solution Solution;
 
@@ -14,40 +14,42 @@ namespace LeetCodeTest.Easy
             Solution = new Solution();
         }
 
+
+
         [TestMethod]
         public void Example1()
         {
-            Assert.AreEqual(Solution.Reverse(123), 321);
+            Assert.AreEqual(Solution.IsValid("()"), true);
         }
 
         [TestMethod]
         public void Example2()
         {
-            Assert.AreEqual(Solution.Reverse(-123), -321);
+            Assert.AreEqual(Solution.IsValid("()[]{}"), true);
         }
 
         [TestMethod]
         public void Example3()
         {
-            Assert.AreEqual(Solution.Reverse(120), 21);
+            Assert.AreEqual(Solution.IsValid("(]"), false);
         }
 
         [TestMethod]
-        public void Failed1()
+        public void Example4()
         {
-            Assert.AreEqual(Solution.Reverse(-2147483412), -2143847412);
+            Assert.AreEqual(Solution.IsValid("([)]"), false);
         }
 
         [TestMethod]
-        public void Failed2()
+        public void Example5()
         {
-            Assert.AreEqual(Solution.Reverse(-2147483648), 0);
+            Assert.AreEqual(Solution.IsValid("{[]}"), true);
         }
 
         [TestMethod]
-        public void Failed3()
+        public void Found1()
         {
-            Assert.AreEqual(Solution.Reverse(1), 1);
+            Assert.AreEqual(Solution.IsValid(""), true);
         }
     }
 }
