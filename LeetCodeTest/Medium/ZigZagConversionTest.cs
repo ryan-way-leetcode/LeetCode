@@ -13,6 +13,30 @@ namespace LeetCodeTest.Medium
         {
             Solution = new Solution();
         }
+
+        [TestMethod]
+        public void Example1()
+        {
+            Assert.AreEqual("PAHNAPLSIIGYIR", Solution.Convert("PAYPALISHIRING", 3));
+        }
+
+        [TestMethod]
+        public void Example2()
+        {
+            Assert.AreEqual("PINALSIGYAHRPI", Solution.Convert("PAYPALISHIRING", 4));
+        }
+
+        [TestMethod]
+        public void Test1()
+        {
+            Assert.AreEqual("", Solution.Convert("", 4));
+        }
+
+        [TestMethod]
+        public void Failed1()
+        {
+            Assert.AreEqual("A", Solution.Convert("A", 1));
+        }
         
     }
 }
